@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+#Dá pra colocar isso aqui em todos os códigos, pro gráfico ficar com o mesmo design
+params = {"ytick.color" : "w",
+          "xtick.color" : "w",
+          "axes.labelcolor" : "w",
+          "axes.edgecolor" : "w"}
+plt.rcParams.update(params)
+
+fig, ax = plt.subplots()
+
+ax.plot([2, 4, 6], [1, 2, 3]) #primeira lista é o eixo X, a segunda lista é o eixo Y
